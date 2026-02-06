@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="netflix.js" defer></script>
+
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+    </div>
+    <button class="sign-btn" id="sign-btn">Sign In</button>
+  </header>
+  <div id="sign" class="sign">
+      <h2 id="close" style="cursor:pointer;text-align: left;">×</h2>
+      <h2>Sign In</h2>
+      <div id="emailStep">
+      <input type="text" id="loginEmail" placeholder="Email address">
+      <span id="loginErrorEmail" style="display: none; color: red; font-size: 14px; margin: 5px 0;"></span>
+      <button id="continueBtn">Continue</button>
+  </div>
+
+  <div id="passwordStep" style="display:none;">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <span id="loginErrorPassword" style="display: none; color: red; font-size: 14px; margin: 5px 0;"></span>
+      <button id="loginBtn">Login</button>
+  </div>
+
+
+</div>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+
+      <form id="signForm">
+        <input type="email" id="email" placeholder="Email address" required />
+        <button type="submit">Get Started</button>
+      </form>
+      <p id="message"></p>
+    </div>
+  </section>
+
+  
+  <section class="movies">
+    <h2 style="color:white">Trending Now</h2>
+    <br>
+
+    <div class="movie-row">
+      <!-- <div class="movie-card">
+        <img src="https://occ-0-8974-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdMV-HZH6NUQ4JzFQwMEwjBSPGMpK6LyHgHQA--Ltd61GC5AD4uc7CTp_c7knmrBLo5he7BkKB1jK7q5vG4jZWaZRtHjWxxUTnczNbIDnZabra5ociBeiC-bcNRC1BMyf8Zl.jpg?r=f34">
+        <p>Taskaree</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://occ-0-8974-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVwkctHoZyXX6x_Wh9ZoVju5V4_FsQpH0O4FmVxA5gQak9__L6X8OV0HBUaKnNLEe1VsXAOZDZmReBW8xLKNTBlXHs4h-llwpiBovnFEX_9QTQYqjZ0Hai2pZSdzgoYilvYw.jpg?r=e8a">
+        <p>Stranger Things</p>
+      </div>
+      <div class="movie-card">
+        <img style="width: 220px;height:100 ;"src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Tere_Ishk_Mein_poster.jpg/250px-Tere_Ishk_Mein_poster.jpg">
+        <p>Tere Ishq Mein</p>
+      </div> -->
+    </div>
+  </section>
+
+  <script src="netflix.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header{
+    background-color: black;
+}
+
+
+.hero-content{
+    color:white;
+    
+    
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.sign-btn {
+  background-color: #e50914; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.hero {
+  height: 70vh;
+  background: linear-gradient(to top, black, transparent),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/e393bb3f-261f-43d1-99bb-16a157885615/web/IN-en-20260105-TRIFECTA-perspective_2802b120-4b8c-44a5-8fb9-617a728f4ec6_large.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero input {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  margin-top: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.movies {
+  padding: 40px;
+  background-color: black;
+  color: white;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.movie-card {
+  min-width: 150px;
+  transition: transform 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+}
+/* Sign In Modal */
+.sign {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000; /* black background */
+    padding: 40px 30px;
+    width: 320px;
+    border-radius: 10px;
+    border: 2px solid #e50914;
+    display: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    z-index: 1000;
+}
+
+.sign input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+}
+
+.sign button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.sign button:hover {
+    background-color: #f6121d;
+}
+
+#loginError {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.show-modal {
+    display: block;  
+
+}
